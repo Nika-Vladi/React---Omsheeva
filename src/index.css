@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'ForestsMooth';
+  src: url('/fonts/ForestSmooth-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Tsarevich';
+  src: url('/fonts/TsarevichOld.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RubikSeaCamouflage';
+  src: url('/fonts/RubikSeaCamouflage.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'UnifixSP';
+  src: url('/fonts/UnifixSPDemo.otf') format('opentype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RuthlessSketch';
+  src: url('/fonts/RuthlessSketch.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.font-tsarevich {
+  font-family: 'Tsarevich', serif !important;
+}
+.font-forests {
+  font-family: 'ForestsMooth', sans-serif !important;
+}
+.font-rubik {
+  font-family: 'RubikSeaCamouflage', sans-serif !important;
+}
+.font-unifix {
+  font-family: 'UnifixSP', sans-serif !important;
+}
+.font-ruthless {
+  font-family: 'RuthlessSketch', sans-serif !important;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #1c1917;
+  
+  /* Базовый цвет холодного камня */
+  background-color: #eae7e1;
+  
+  /* Контрастный туманный градиент с выразительными пятнами света и тени */
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(200, 214, 229, 0.7) 0%, transparent 45%),
+    radial-gradient(circle at 90% 15%, rgba(215, 205, 195, 0.8) 0%, transparent 40%),
+    radial-gradient(circle at 50% 85%, rgba(195, 205, 210, 0.6) 0%, transparent 50%);
+  background-attachment: fixed;
+  background-size: cover;
+}
