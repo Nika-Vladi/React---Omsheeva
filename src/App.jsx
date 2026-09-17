@@ -21,8 +21,6 @@ import AdminPage from './pages/AdminPage';
 // страницы приложения
 
  function App() {
-
-  // Главный state приложения.
   // Здесь хранится весь список туров.
   const [tours, setTours] = useState(() => {
 
