@@ -54,11 +54,9 @@ body {
   margin: 0;
   min-height: 100vh;
   color: #1c1917;
-  
-  /* Базовый цвет холодного камня */
+
   background-color: #eae7e1;
-  
-  /* Контрастный туманный градиент с выразительными пятнами света и тени */
+
   background-image: 
     radial-gradient(circle at 10% 20%, rgba(200, 214, 229, 0.7) 0%, transparent 45%),
     radial-gradient(circle at 90% 15%, rgba(215, 205, 195, 0.8) 0%, transparent 40%),
