@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
-export default function Navbar() {
+function Navbar() {
   //СОСТОЯНИЕ МОБИЛЬНОГО МЕНЮ 
   // false — меню свернуто, true — выпадающая панель открыта на смартфонах
   const [isOpen, setIsOpen] = useState(false);
@@ -75,3 +75,4 @@ export default function Navbar() {
     </header>
   );
 }
+export default Navbar

@@ -20,7 +20,7 @@ import AboutPage from './pages/AboutPage';
 import AdminPage from './pages/AdminPage';
 // страницы приложения
 
-export default function App() {
+ function App() {
 
   // Главный state приложения.
   // Здесь хранится весь список туров.
@@ -116,27 +116,11 @@ export default function App() {
         <Navbar />
         <main className="flex-1">
           <Routes>
-            <Route
-              path="/"
-              element={
-                <HomePage tours={tours} />
-              }
-            />
+            <Route path="/" element={<HomePage tours={tours} />}/>
             {/* Передача массива туров через props */}
-            <Route
-              path="/tours"
-              element={
-                <ToursPage tours={tours} />
-              }
-            />
-            <Route
-              path="/about"
-              element={<AboutPage />}
-            />
-            <Route
-              path="/admin"
-              element={
-                <AdminPage
+            <Route path="/tours" element={<ToursPage tours={tours} />}/>
+            <Route path="/about" element={<AboutPage />}/>
+            <Route path="/admin" element={<AdminPage
                   // список туров
                   tours={tours}
                   // функции CRUD
@@ -155,3 +139,4 @@ export default function App() {
     </Router>
   );
 }
+export default App

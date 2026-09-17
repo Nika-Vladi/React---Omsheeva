@@ -7,7 +7,7 @@ import BookingModal from '../components/BookingModal';
 // Навигационная ссылка (для возможного возврата или перехода к действиям)
 import { Link } from 'react-router-dom';
 
-export default function ToursPage({ tours }) {
+function ToursPage({ tours }) {
   // Хранит текст, введенный пользователем в поисковую строку
   const [search, setSearch] = useState('');
 
@@ -92,3 +92,4 @@ export default function ToursPage({ tours }) {
     </div>
   );
 }
+export default ToursPage

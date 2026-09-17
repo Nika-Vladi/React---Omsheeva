@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function BookingModal({ isOpen, onClose, tours = [], initialTourId = null }) {
+ function BookingModal({ isOpen, onClose, tours = [], initialTourId = null }) {
   //СОСТОЯНИЯ УПРАВЛЯЕМЫХ ПОЛЕЙ 
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
@@ -144,3 +144,4 @@ export default function BookingModal({ isOpen, onClose, tours = [], initialTourI
     </div>
   );
 }
+export default BookingModal

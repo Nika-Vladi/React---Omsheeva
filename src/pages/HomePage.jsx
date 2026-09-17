@@ -6,7 +6,7 @@ import TourCard from '../components/TourCard';
 // Всплывающее окно оформления брони
 import BookingModal from '../components/BookingModal';
 
-export default function HomePage({ tours }) {  
+ function HomePage({ tours }) {  
   //  берет первые 3 объекта из массива без мутации исходных данных.
   const featured = Array.isArray(tours) ? tours.slice(0, 3) : [];
 
@@ -104,3 +104,4 @@ export default function HomePage({ tours }) {
     </div>
   );
 }
+export default HomePage

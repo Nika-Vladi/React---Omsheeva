@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function AdminPage({ tours, addTour, updateTour, deleteTour, resetToDefault }) {
+function AdminPage({ tours, addTour, updateTour, deleteTour, resetToDefault }) {
   // Исходный шаблон пустой формы для сброса полей после сохранения или отмены
   const emptyForm = {
     title: '',
@@ -130,6 +130,7 @@ export default function AdminPage({ tours, addTour, updateTour, deleteTour, rese
   };
 
   // сброс к исходным данным
+  //текущий список туров заменяется исходным массивом, после обновляет интерфейс
   const handleReset = () => {
     const isConfirmed = window.confirm('Сбросить список туров к исходным данным?');
     if (isConfirmed) {
@@ -439,3 +440,4 @@ export default function AdminPage({ tours, addTour, updateTour, deleteTour, rese
     </div>
   );
 }
+export default AdminPage

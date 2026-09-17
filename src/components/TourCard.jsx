@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function TourCard({ tour, onBook }) {
+function TourCard({ tour, onBook }) {
   // Запасное дефолтное изображение на случай, если  забыли ссылку в туре добавить
   const fallback = "/ImageCard/ruskeala.jpeg";
 
@@ -69,3 +69,4 @@ export default function TourCard({ tour, onBook }) {
     </div>
   );
 }
+export default TourCard

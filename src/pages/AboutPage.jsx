@@ -40,8 +40,7 @@ const guides = [
   },
 ];
 
-export default function AboutPage() {
-  // 2. СОСТОЯНИЕ ВЫБРАННОГО ПРОВОДНИКА (Хук useState)
+ function AboutPage() {
   // Хранит числовой индекс активного элемента (по умолчанию 0 — первый гид)
   const [activeGuide, setActiveGuide] = useState(0);
 
@@ -250,3 +249,4 @@ export default function AboutPage() {
     </div>
   );
 }
+export default AboutPage
