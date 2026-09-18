@@ -4,7 +4,8 @@ import { NavLink, Link } from 'react-router-dom';
 
 function Navbar() {
   //СОСТОЯНИЕ МОБИЛЬНОГО МЕНЮ 
-  // false — меню свернуто, true — выпадающая панель открыта на смартфонах
+  // false — меню свернуто, true — меню открыто на смартфонах
+  //при нажатии  на бургер вызывается фкнкция и меняет значение 
   const [isOpen, setIsOpen] = useState(false);
 
   // NavLink автоматически передает в функцию аргумент { isActive }.

@@ -17,10 +17,10 @@ function AdminPage({ tours, addTour, updateTour, deleteTour, resetToDefault }) {
   // editingId: идентификатор редактируемого тура (null = режим создания новой карточки)
   const [editingId, setEditingId] = useState(null);
 
-  // notification: текст всплывающей плашки с сообщением об успехе
+  // notification: текст всплывающего уведолмления 
   const [notification, setNotification] = useState(null);
 
-  // bookings: массив входящих клиентских броней для CRM-таблицы
+  // bookings: массив входящих клиентских броней для таблички 
   const [bookings, setBookings] = useState([]);
 
   // Срабатывает  один раз при создании компонента (пустой массив зависимостей []).

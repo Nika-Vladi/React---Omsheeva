@@ -73,11 +73,12 @@ function ToursPage({ tours }) {
           )}
         </div>
       ) : (
+        // создание карточек 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredTours.map((tour) => (
             <TourCard 
-              key={tour.id} // Стабильный уникальный ключ для алгоритма согласования (Reconciliation) React
-              tour={tour} 
+              key={tour.id} //  уникальный ключ 
+              tour={tour} //объект тура текущий 
               onBook={handleOpenBooking}
             />
           ))}

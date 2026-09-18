@@ -1,5 +1,5 @@
 import React from 'react';
-
+// 2 пропса передается
 function TourCard({ tour, onBook }) {
   // Запасное дефолтное изображение на случай, если  забыли ссылку в туре добавить
   const fallback = "/ImageCard/ruskeala.jpeg";

@@ -36,7 +36,7 @@ import React, { useState, useEffect } from 'react';
 
     // Формируем структуру данных входящего лида (Lead Data Model)
     const newBooking = {
-      id: Date.now(), // Уникальный идентификатор заявки на основе миллисекунд
+      id: Date.now(), // Уникальный id
       clientName: name.trim(),
       clientPhone: phone.trim(),
       tourTitle: currentTour ? currentTour.title : 'Не указан',
